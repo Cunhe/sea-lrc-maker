@@ -1,0 +1,7 @@
+.app-editor { position: relative; display: flex; flex: 1 0 auto; flex-direction: column; margin: 16px; padding: 8px; font-size: 1.2rem; background-color: transparent; border: 1px solid var(--theme-color); border-radius: var(--border-radius); transition: box-shadow var(--transition-duration) ease-in-out; }
+.app-editor:hover, .app-editor:focus-within { box-shadow: 0 0 10px var(--theme-color); }
+@media (width <= 768px) { .app-editor { margin: 0; border: 0; border-radius: 0; } .app-editor:hover, .app-editor:focus-within { box-shadow: none; } }
+.app-editor-infobox { display: none; }
+@supports (display: grid) { .app-editor-infobox { grid-template-rows: 1fr 1fr 1fr; grid-template-columns: auto 1fr auto; } [open] > .app-editor-infobox { display: grid; } }
+.app-textarea { flex: 1 0 auto; border: none; overscroll-behavior-y: contain; }
+.app-editor input, .app-editor textarea { padding: 0; background-color: transparent; border: none; resize: none; }
