@@ -1,0 +1,36 @@
+{
+  "name": "sea-lrc-maker",
+  "version": "1.0.0",
+  "description": "SEAWIND · 海风歌词",
+  "repository": "https://github.com/Cunhe/sea-lrc-maker.git",
+  "author": "SEAWIND",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@10.11.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "imports": {
+    "#const/*": "./src/const/*"
+  },
+  "dependencies": {
+    "@lrc-maker/lrc-parser": "^0.1.17",
+    "@wavesurfer/react": "^1.0.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "wavesurfer.js": "^7.9.5"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.11.29",
+    "@types/node": "^22.15.21",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "lightningcss": "1.32.0",
+    "rollup-plugin-externals": "^0.0.1",
+    "rollup-plugin-swc3": "^0.12.1",
+    "toggle-switch-css": "^1.0.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  }
+}

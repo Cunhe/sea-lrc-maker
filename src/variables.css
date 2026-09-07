@@ -1,0 +1,31 @@
+:root {
+    --white: #f4faf8;
+    --black: #07131a;
+    --theme-rgb: 125, 211, 199;
+    --theme-color: rgb(var(--theme-rgb));
+    --theme-contrast-color: #062027;
+    --font-color: #e8f6f2;
+    --background-color: #07131a;
+    --surface: color-mix(in srgb, #12303a 78%, transparent);
+    --line: color-mix(in srgb, var(--theme-color) 28%, transparent);
+    --semi-black-color: color-mix(in srgb, #061018 78%, transparent);
+    --semi-white-color: color-mix(in srgb, #e8f6f2 16%, transparent);
+    --border-radius: 16px;
+    --radius-pill: 999px;
+    --text-shadow: 0 1px 12px color-mix(in srgb, var(--theme-color) 35%, transparent);
+    --drop-shadow: drop-shadow(0 0 8px color-mix(in srgb, var(--theme-color) 55%, transparent));
+    --elev: 0 10px 40px rgba(2, 12, 16, 0.35);
+    --transition-duration: 240ms;
+    --animation-duration: 280ms;
+    --animation-durationx2: 560ms;
+}
+[data-theme="light"] {
+    --font-color: #12303a;
+    --background-color: #eef7f4;
+    --semi-black-color: color-mix(in srgb, #ffffff 72%, transparent);
+    --surface: color-mix(in srgb, #ffffff 72%, transparent);
+}
+[data-theme="dark"] {
+    --font-color: #e8f6f2;
+    --background-color: #07131a;
+}
