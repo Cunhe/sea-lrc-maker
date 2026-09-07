@@ -1,0 +1,23 @@
+:root {
+    color: var(--font-color);
+    font-family: Sora, Manrope, -apple-system, BlinkMacSystemFont, system-ui, "PingFang SC", "Microsoft YaHei UI", sans-serif;
+    background-color: var(--background-color);
+    background-image:
+        radial-gradient(1200px 600px at 12% -10%, color-mix(in srgb, var(--theme-color) 22%, transparent), transparent 60%),
+        radial-gradient(900px 500px at 110% 8%, color-mix(in srgb, #9ad8e8 18%, transparent), transparent 55%);
+    background-attachment: fixed;
+    caret-color: var(--theme-color);
+}
+svg { fill: currentColor; }
+::selection { color: var(--theme-contrast-color); background-color: var(--theme-color); }
+a { color: currentColor; text-decoration: none; }
+a, button, [type="submit"] { padding: 0 8px; background: 0; border: 0; appearance: none; }
+ul { margin: 0; padding: 0; list-style: none; }
+.button { padding: 8px 14px; color: var(--theme-contrast-color); background-color: var(--theme-color); border-radius: var(--radius-pill); }
+.akari-odango-loading { position: fixed; inset: 0; width: 28vmin; height: 28vmin; margin: auto; }
+.start-loading { animation: seawind-breathe 2.4s ease-in-out infinite; }
+@keyframes seawind-breathe {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-6px) scale(1.04); }
+}
+.akari-not-found { flex: 1 1 auto; align-self: center; max-width: 72vw; max-height: 48vh; margin-top: auto; opacity: .55; }

@@ -1,0 +1,10 @@
+{
+  "name": "海风歌词",
+  "short_name": "海风歌词",
+  "description": "SEAWIND · 海风歌词",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07131a",
+  "theme_color": "#07131a",
+  "icons": [{ "src": "./svg/seawind-mark.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

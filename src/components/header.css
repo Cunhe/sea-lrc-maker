@@ -1,0 +1,21 @@
+.app-header {
+    position: fixed; top: 0; z-index: 233; display: flex; align-items: center; justify-content: space-between;
+    width: 100%; height: 64px; padding: 0 12px;
+    padding-right: max(12px, env(safe-area-inset-right));
+    padding-left: max(12px, env(safe-area-inset-left));
+    color: var(--theme-color);
+    background: color-mix(in srgb, var(--semi-black-color) 82%, transparent);
+    backdrop-filter: blur(18px) saturate(1.2);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 8px 30px rgba(2, 12, 16, 0.18);
+    animation: slide-in-down var(--animation-duration) ease-in-out forwards;
+    user-select: none;
+}
+.app-title { display: inline-flex; gap: 10px; align-items: center; font-weight: 620; font-size: 1.15rem; letter-spacing: .04em; }
+.app-title-text { display: inline-flex; }
+.app-header a { display: inline-flex; align-items: center; justify-content: center; min-width: 56px; min-height: 56px; padding: 0; color: color-mix(in srgb, var(--font-color) 82%, white); }
+.app-nav { display: inline-flex; gap: 2px; padding: 4px; border: 1px solid var(--line); border-radius: 18px; background: color-mix(in srgb, var(--surface) 70%, transparent); }
+.app-tab { position: relative; border-radius: 14px; }
+.app-tab::before { position: absolute; inset: 4px; z-index: -1; border-radius: 12px; background: color-mix(in srgb, var(--theme-color) 18%, transparent); opacity: 0; content: ""; }
+.app-tab:target::before, .app-tab:hover::before { opacity: 1; }
+.app-tab > svg, .app-title > svg { width: 26px; height: 26px; }
