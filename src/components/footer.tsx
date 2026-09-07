@@ -97,10 +97,37 @@ export const Footer: React.FC = () => {
 };
 
 type TsetAudioSrc = (src: string) => void;
+const MimeType = { fLaC: 0x664c6143, OggS: 0x4f676753, RIFF: 0x52494646, WAVE: 0x57415645 };
+const detectMimeType = (dataArray: Uint8Array) => {
+    const magicNumber = new DataView(dataArray.buffer).getUint32(0, false);
+    switch (magicNumber) {
+        case MimeType.fLaC: return "audio/flac";
+        case MimeType.OggS: return "audio/ogg";
+        case MimeType.RIFF:
+        case MimeType.WAVE: return "audio/wav";
+        default: return "audio/mpeg";
+    }
+};
+const bindWorker = (url: string, file: File, setAudioSrc: TsetAudioSrc) => {
+    const worker = new Worker(new URL(url, import.meta.url));
+    worker.addEventListener("message", (ev: IMessageEvent<IMessage>) => {
+        if (ev.data.type === "success") {
+            setAudioSrc(URL.createObjectURL(new Blob([ev.data.payload], { type: detectMimeType(ev.data.payload) })));
+        }
+        if (ev.data.type === "error") toastPubSub.pub({ type: "warning", text: ev.data.payload });
+    }, { once: true });
+    worker.addEventListener("error", (ev) => {
+        toastPubSub.pub({ type: "warning", text: ev.message });
+        worker.terminate();
+    }, { once: true });
+    worker.postMessage(file);
+};
 const receiveFile = (file: File, setAudioSrc: TsetAudioSrc): void => {
     sessionStorage.removeItem(SSK.audioSrc);
     if (!file) return;
     if (file.type.startsWith("audio/")) { setAudioSrc(URL.createObjectURL(file)); return; }
+    if (file.name.endsWith(".ncm")) { bindWorker("/worker/ncmc-worker.js", file, setAudioSrc); return; }
+    if (/\.qmc(?:flac|0|1|2|3)$/.test(file.name)) { bindWorker("/worker/qmc-worker.js", file, setAudioSrc); }
 };
 
 document.addEventListener("visibilitychange", () => {
