@@ -1,0 +1,12 @@
+{
+    "languageName": "繁體中文",
+    "app": { "name": "海風歌詞", "fullname": "SEAWIND · 海風歌詞" },
+    "header": { "home": "主頁", "editor": "編輯", "synchronizer": "同步", "gist": "Github Gist", "preferences": "設定" },
+    "audio": { "loadAudio": "匯入音訊", "play": "播放", "pause": "暫停", "replay5s": "倒轉 5s", "forward5s": "快轉 5s", "resetRate": "重設播放速度", "error": ["音訊錯誤", "音訊請求被用戶終止", "音訊網路請求錯誤", "音訊解碼錯誤", "瀏覽器無法支援此音訊格式"] },
+    "loadAudio": { "file": "檔案", "url": "URL", "loadFile": "點選這裡或直接拖放音訊檔案" },
+    "home": { "tips": "潮汐指引", "tipForLyricText": "切換到編輯頁面，貼上歌詞。", "tipForUploadAudio": "點擊左下角的按鈕選擇音訊。", "tipForSynchronizer": "切換到打軸頁，讓詞跟著海風滾動。", "tipTopLeft": "左上角切換頁面", "tipTopRight": "調整語言與主題", "tipBottomLeft": "匯入音檔", "tipBottomRight": "調速與進度" },
+    "editor": { "metaInfo": "歌詞資訊", "album": "專輯", "title": "歌名", "artist": "演唱者", "uploadText": "匯入歌詞", "copyText": "複製", "downloadText": "下載", "saveToGist": "存到 Gist", "saveFileName": "檔名", "utils": "工具" },
+    "gist": { "newTokenTip": "海風歌詞使用 Github Token 存取 Gist", "newTokenButton": "新增 Token", "newGistTip": "建立或繪入 Gist", "newGistRepoButton": "建立 Gist", "gistIdPlaceholder": "Gist ID", "info": "Gist 資訊", "clearTokenAndGist": "清除" },
+    "preferences": { "version": "版本", "commitHash": "Commit", "updateTime": "更新", "repo": "倉庫", "help": "幫助", "language": "語言", "builtInAudio": "內建播放器", "spaceButton": "螢幕 Space", "showWaveform": "波形", "themeMode": { "label": "主題", "auto": "自動", "light": "淺色", "dark": "深色" }, "themeColor": "主題色", "lrcFormat": "LRC 格式", "fixed": "小數位", "leftSpace": "左側空白", "rightSpace": "右側空白", "clearCache": "清除快取" },
+    "notify": { "audioLoaded": "音訊已載入" }
+}

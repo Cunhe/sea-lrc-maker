@@ -1,0 +1,14 @@
+.preferences { width: 100%; user-select: none; }
+.preferences > ul { max-width: 1024px; margin: auto; }
+.preferences li { width: 100%; padding: 0 8px; }
+.preferences li:nth-child(even) { background-color: color-mix(in srgb, var(--theme-color) 6%, transparent); }
+.list-item { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; max-width: 768px; min-height: 3.5rem; margin: auto; }
+.toggle-switch { --switch-theme-rgb: var(--theme-rgb); justify-content: center; }
+.color-picker { display: inline-flex; align-items: center; justify-content: center; min-width: 30px; height: 30px; margin: 2px; border-radius: var(--border-radius); }
+.color-picker.checked::before { content: "\2714\FE0F"; }
+.format-example-text { color: var(--theme-contrast-color); white-space: pre-wrap; background-color: var(--theme-color); }
+.option-select > select { padding-right: 16px; text-align-last: right; background-color: transparent; border: none; appearance: none; }
+.option-select { position: relative; }
+.option-select::after { position: absolute; right: 0; color: var(--theme-color); content: "\25BC"; pointer-events: none; }
+input[type="number"] { width: 4rem; height: 30px; text-align: right; background: 0; border: 0; border-bottom: 1px solid var(--theme-color); }
+.akari-hide-wall { position: fixed; right: 0; bottom: 32px; z-index: -1; width: 160px; height: 160px; opacity: 0.35; pointer-events: none; }

@@ -1,0 +1,12 @@
+{
+    "languageName": "日本語",
+    "app": { "name": "SEAWIND", "fullname": "SEAWIND · 海風歌詞" },
+    "header": { "home": "ホーム", "editor": "編集", "synchronizer": "同期", "gist": "Github Gist", "preferences": "設定" },
+    "audio": { "loadAudio": "音声を読み込む", "play": "再生", "pause": "一時停止", "replay5s": "5秒戻す", "forward5s": "5秒進める", "resetRate": "倍速を戻す", "error": ["音声エラー", "取消", "ネットワークエラー", "デコードエラー", "未対応形式"] },
+    "loadAudio": { "file": "ファイル", "url": "URL", "loadFile": "ここをタップ、または音声をドロップ" },
+    "home": { "tips": "流れ", "tipForLyricText": "編集に歌詞を貼り付ける", "tipForUploadAudio": "左下のボタンで音声を読み込む", "tipForSynchronizer": "同期画面で海風に乗せて時間軸を打つ", "tipTopLeft": "左上で画面切替", "tipTopRight": "言語とテーマ", "tipBottomLeft": "音声読み込み", "tipBottomRight": "進行と倍速" },
+    "editor": { "metaInfo": "メタ", "album": "アルバム", "title": "タイトル", "artist": "アーティスト", "uploadText": "歌詞読み込み", "copyText": "コピー", "downloadText": "ダウンロード", "saveToGist": "Gist に保存", "saveFileName": "ファイル名", "utils": "ツール" },
+    "gist": { "newTokenTip": "SEAWIND は Github Token で Gist に接続します", "newTokenButton": "Token 作成", "newGistTip": "Gist を作るか入力", "newGistRepoButton": "Gist 作成", "gistIdPlaceholder": "Gist ID", "info": "Gist 情報", "clearTokenAndGist": "クリア" },
+    "preferences": { "version": "バージョン", "commitHash": "Commit", "updateTime": "更新", "repo": "リポジトリ", "help": "ヘルプ", "language": "言語", "builtInAudio": "標準プレーヤー", "spaceButton": "画面上の Space", "showWaveform": "波形", "themeMode": { "label": "テーマ", "auto": "自動", "light": "ライト", "dark": "ダーク" }, "themeColor": "テーマ色", "lrcFormat": "LRC 形式", "fixed": "小数", "leftSpace": "左空白", "rightSpace": "右空白", "clearCache": "キャッシュ削除" },
+    "notify": { "audioLoaded": "音声を読み込みました" }
+}
