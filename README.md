@@ -1,6 +1,7 @@
-# 海风歌词 · SEAWIND
+# 潮词 · Tidelrc
 
-Sea-wind themed lyric timing studio. Forked from [magic-akari/lrc-maker](https://github.com/magic-akari/lrc-maker) (MIT) and restyled as **海风歌词**.
+
+Tidelrc themed lyric timing studio. Forked from [magic-akari/lrc-maker](https://github.com/magic-akari/lrc-maker) (MIT) and restyled as **潮词**.
 
 ## Use
 
@@ -17,6 +18,6 @@ Vercel: Framework Vite, Output `build`, Install `pnpm i`, Build `pnpm build`.
 
 ## Brand
 
-- Product: 海风歌词
-- English: SEAWIND
-- Repo: sea-lrc-maker
+- Product: 潮词
+- English: Tidelrc
+- Repo: Tidelrc
